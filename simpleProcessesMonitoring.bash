@@ -10,9 +10,9 @@ LOADAVG5MN=`echo $LOADAVG5MN | sed 's/,/./'`
 # Prend la partie entière
 LOADAVG5MN=`echo $LOADAVG5MN | cut -d'.' -f1`
 
-echo LOCALTIME = $LOCALTIME
-echo HOSTNAME = $HOSTNAME
-echo LOADAVG5MN = $LOADAVG5MN
+#echo LOCALTIME = $LOCALTIME
+#echo HOSTNAME = $HOSTNAME
+#echo LOADAVG5MN = $LOADAVG5MN
 
 if [ $LOADAVG5MN -gt $LOADAVG5MN_LIMIT ]
 then
