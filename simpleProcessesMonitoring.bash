@@ -17,14 +17,13 @@ echo LOADAVG5MN = $LOADAVG5MN
 if [ $LOADAVG5MN -gt $LOADAVG5MN_LIMIT ]
 then
 
-echo AVG over limit
+# echo AVG over limit
 
 ps -Afl xf | mail -s "$HOSTNAME $0" cyrille@giquello.fr
 
 else
 
-echo AVG under limit
-
+# echo AVG under limit
 #top -b -c -n1 2<&1 | mail -s "$HOSTNAME $0" cyrille@giquello.fr
 
 fi
